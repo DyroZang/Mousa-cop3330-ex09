@@ -4,6 +4,7 @@
  */
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class App{
     public static void main(String[] args){
@@ -17,7 +18,7 @@ public class App{
         System.out.println("What is the width?");
         int width = Integer.parseInt(input.nextLine());
 
-        int area = width*length;
+        double area = Math.ceil(width*length);
 
         int i = 1;
         int num = conv*i;
